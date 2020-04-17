@@ -1,0 +1,6 @@
+framework module Pods_InsightX_InsightXUITests {
+  umbrella header "Pods-InsightX-InsightXUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
