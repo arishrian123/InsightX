@@ -9,7 +9,13 @@
 import SwiftUI
 
 struct UpdateKycList: View {
+    
     @ObservedObject var KYCData = firebaseData
+    
+    func addKyc(){
+        
+        KYCData.KYCData.append(KYC(ClientID: "aa", FirstName: "aa", LastName: "a", ResidentialAddress: "", DateOfBirth: "", GovernmentDocumentAttached: "", PEPCheck: "", MailingAddress: "", TransitAccountNumber: "", TransitAccountHolder: "", SourceOfWealth: "", ClientKnowledge: "", PaperMailing: "", KYCCheck: ""))
+    }
     
     var body: some View {
         NavigationView {
@@ -18,8 +24,15 @@ struct UpdateKycList: View {
                     
                     KYCListView(kyc: item)
                     
-            }
-            }.navigationBarTitle(Text("KYC Tasks"))
+                }.onDelete { index in
+                    self.KYCData.KYCData.remove(at: index.first!)
+                }
+                }
+            .navigationBarTitle(Text("KYC Tasks"))
+                .navigationBarItems(leading: Button(action: {self.addKyc()}) {
+                    Text("Add Task")
+                }, trailing: EditButton())
+            
             }
     }
 }
@@ -35,17 +48,14 @@ struct KYCListView: View {
     var kyc: KYC
     var body: some View {
         VStack{
-            NavigationLink(destination: Text(kyc.ClientID)){
+            NavigationLink(destination: UpdateKycDetail(kyc: kyc)){
                 
                 HStack {
-                    Image("Logo")
+                    Image("\(kyc.LastName)")
                         .resizable()
-                        .renderingMode(.original)
+                        .frame(width: 50, height: 50)
                         .aspectRatio(contentMode: .fit)
-                        .frame(width: 80, height: 80)
-                        .background(Color("primary"))
-                        .cornerRadius(20)
-                        .padding(.trailing, 4)
+                        .clipShape(Circle())
 
                     VStack(alignment: .leading, spacing: 8) {
                         
@@ -67,7 +77,7 @@ struct KYCListView: View {
                     }
                     Spacer()
                     
-                    Text(kyc.KYCCheck)
+                    Text("⚠️ "+kyc.KYCCheck)
                     .lineLimit(2)
                     .font(.subheadline)
                     .foregroundColor(Color(#colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)))

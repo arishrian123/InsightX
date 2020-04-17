@@ -108,20 +108,29 @@ struct SectionView: View {
                 Spacer()
                 
                 
-                Image(client.Nationality)
+                Image(client.Surname)
                 .resizable()
                 .frame(width: 50, height: 50)
                 .aspectRatio(contentMode: .fit)
                 .clipShape(Circle())
                 
-            }
+                
+            }.padding()
             
-            Image(uiImage: #imageLiteral(resourceName: "Card4"))
+            Image(client.Nationality + "C")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 210)
+            
+            Image(client.Nationality)
+            .resizable()
+            .frame(width: 50, height: 50)
+            .aspectRatio(contentMode: .fit)
+            .clipShape(Circle())
+            .padding()
+                
         }
-        .padding(.top, -30)
+        .padding(.top, 5)
         .padding(.horizontal, 20)
         .frame(width: 275, height: 350)
         .background(color.randomElement())

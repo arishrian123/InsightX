@@ -27,6 +27,8 @@ class FirebaseData: ObservableObject {
         readKYCData()
     }
     
+    
+    
     // Reference link: https://firebase.google.com/docs/firestore/manage-data/add-data
 //    func createData(msg1:String) {
 //        // To create or overwrite a single document

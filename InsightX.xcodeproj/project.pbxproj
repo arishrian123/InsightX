@@ -3,15 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		199972E42447CDC700F3BC0E /* ClientRows.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199972E32447CDC700F3BC0E /* ClientRows.swift */; };
-		199972E72447D79700F3BC0E /* ASCollectionView in Frameworks */ = {isa = PBXBuildFile; productRef = 199972E62447D79700F3BC0E /* ASCollectionView */; };
 		199972E92447DEA200F3BC0E /* Portfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199972E82447DEA200F3BC0E /* Portfolio.swift */; };
 		199972EB2447DEC600F3BC0E /* Securities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199972EA2447DEC600F3BC0E /* Securities.swift */; };
-		199972ED2447FD3600F3BC0E /* SecuritiesRows.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199972EC2447FD3600F3BC0E /* SecuritiesRows.swift */; };
 		199972EF24489AB200F3BC0E /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199972EE24489AB200F3BC0E /* Buttons.swift */; };
 		199972F12448A98600F3BC0E /* ClientCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199972F02448A98600F3BC0E /* ClientCardView.swift */; };
 		199972F72448C32100F3BC0E /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199972F62448C32100F3BC0E /* MenuView.swift */; };
@@ -20,6 +17,7 @@
 		199972FF2449253A00F3BC0E /* UpdateKycList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199972FE2449253A00F3BC0E /* UpdateKycList.swift */; };
 		1999730324492BA000F3BC0E /* KYC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1999730224492BA000F3BC0E /* KYC.swift */; };
 		19997305244A0A0200F3BC0E /* UpdateKycDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19997304244A0A0100F3BC0E /* UpdateKycDetail.swift */; };
+		1999730F244A4ED900F3BC0E /* AddNewKycTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1999730E244A4ED900F3BC0E /* AddNewKycTask.swift */; };
 		19CCB6AB2445332800DFAD05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CCB6AA2445332800DFAD05 /* AppDelegate.swift */; };
 		19CCB6AD2445332800DFAD05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CCB6AC2445332800DFAD05 /* SceneDelegate.swift */; };
 		19CCB6B12445332900DFAD05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19CCB6B02445332900DFAD05 /* Assets.xcassets */; };
@@ -27,8 +25,6 @@
 		19CCB6B72445332900DFAD05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19CCB6B52445332900DFAD05 /* LaunchScreen.storyboard */; };
 		19CCB6C22445332A00DFAD05 /* InsightXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CCB6C12445332A00DFAD05 /* InsightXTests.swift */; };
 		19CCB6CD2445332A00DFAD05 /* InsightXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CCB6CC2445332A00DFAD05 /* InsightXUITests.swift */; };
-		19CCB6DF2446477A00DFAD05 /* RM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CCB6DE2446477A00DFAD05 /* RM.swift */; };
-		19CCB6E2244649BF00DFAD05 /* RMStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CCB6E1244649BF00DFAD05 /* RMStore.swift */; };
 		19CCB6E424466D0E00DFAD05 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 19CCB6E324466D0E00DFAD05 /* GoogleService-Info.plist */; };
 		19CCB6EA24469DE200DFAD05 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CCB6E924469DE200DFAD05 /* Client.swift */; };
 		19CCB6FA2447AEA800DFAD05 /* FirebaseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CCB6F92447AEA800DFAD05 /* FirebaseData.swift */; };
@@ -55,10 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		199972E32447CDC700F3BC0E /* ClientRows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientRows.swift; sourceTree = "<group>"; };
 		199972E82447DEA200F3BC0E /* Portfolio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Portfolio.swift; sourceTree = "<group>"; };
 		199972EA2447DEC600F3BC0E /* Securities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Securities.swift; sourceTree = "<group>"; };
-		199972EC2447FD3600F3BC0E /* SecuritiesRows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecuritiesRows.swift; sourceTree = "<group>"; };
 		199972EE24489AB200F3BC0E /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		199972F02448A98600F3BC0E /* ClientCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientCardView.swift; sourceTree = "<group>"; };
 		199972F62448C32100F3BC0E /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
@@ -67,6 +61,7 @@
 		199972FE2449253A00F3BC0E /* UpdateKycList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateKycList.swift; sourceTree = "<group>"; };
 		1999730224492BA000F3BC0E /* KYC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYC.swift; sourceTree = "<group>"; };
 		19997304244A0A0100F3BC0E /* UpdateKycDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateKycDetail.swift; sourceTree = "<group>"; };
+		1999730E244A4ED900F3BC0E /* AddNewKycTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewKycTask.swift; sourceTree = "<group>"; };
 		19CCB6A72445332800DFAD05 /* InsightX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InsightX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19CCB6AA2445332800DFAD05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19CCB6AC2445332800DFAD05 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,8 +75,6 @@
 		19CCB6C82445332A00DFAD05 /* InsightXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InsightXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		19CCB6CC2445332A00DFAD05 /* InsightXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightXUITests.swift; sourceTree = "<group>"; };
 		19CCB6CE2445332A00DFAD05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		19CCB6DE2446477A00DFAD05 /* RM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RM.swift; sourceTree = "<group>"; };
-		19CCB6E1244649BF00DFAD05 /* RMStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMStore.swift; sourceTree = "<group>"; };
 		19CCB6E324466D0E00DFAD05 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		19CCB6E924469DE200DFAD05 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		19CCB6F92447AEA800DFAD05 /* FirebaseData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseData.swift; sourceTree = "<group>"; };
@@ -102,7 +95,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4CAFE52FF1485930CCD94C7 /* Pods_InsightX.framework in Frameworks */,
-				199972E72447D79700F3BC0E /* ASCollectionView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,9 +157,8 @@
 				19CCB6B82445332900DFAD05 /* Info.plist */,
 				19CCB6B22445332900DFAD05 /* Preview Content */,
 				19CCB6E02446486300DFAD05 /* Model */,
-				199972E32447CDC700F3BC0E /* ClientRows.swift */,
-				199972EC2447FD3600F3BC0E /* SecuritiesRows.swift */,
 				199972EE24489AB200F3BC0E /* Buttons.swift */,
+				1999730E244A4ED900F3BC0E /* AddNewKycTask.swift */,
 			);
 			path = InsightX;
 			sourceTree = "<group>";
@@ -202,8 +193,6 @@
 			isa = PBXGroup;
 			children = (
 				19CCB6E924469DE200DFAD05 /* Client.swift */,
-				19CCB6DE2446477A00DFAD05 /* RM.swift */,
-				19CCB6E1244649BF00DFAD05 /* RMStore.swift */,
 				199972E82447DEA200F3BC0E /* Portfolio.swift */,
 				199972EA2447DEC600F3BC0E /* Securities.swift */,
 				1999730224492BA000F3BC0E /* KYC.swift */,
@@ -261,7 +250,6 @@
 			);
 			name = InsightX;
 			packageProductDependencies = (
-				199972E62447D79700F3BC0E /* ASCollectionView */,
 			);
 			productName = InsightX;
 			productReference = 19CCB6A72445332800DFAD05 /* InsightX.app */;
@@ -339,7 +327,6 @@
 			);
 			mainGroup = 19CCB69E2445332800DFAD05;
 			packageReferences = (
-				199972E52447D79700F3BC0E /* XCRemoteSwiftPackageReference "ASCollectionView" */,
 			);
 			productRefGroup = 19CCB6A82445332800DFAD05 /* Products */;
 			projectDirPath = "";
@@ -490,22 +477,19 @@
 			files = (
 				199972E92447DEA200F3BC0E /* Portfolio.swift in Sources */,
 				19997305244A0A0200F3BC0E /* UpdateKycDetail.swift in Sources */,
-				19CCB6E2244649BF00DFAD05 /* RMStore.swift in Sources */,
 				19CCB6AB2445332800DFAD05 /* AppDelegate.swift in Sources */,
 				199972EB2447DEC600F3BC0E /* Securities.swift in Sources */,
 				19CCB6FA2447AEA800DFAD05 /* FirebaseData.swift in Sources */,
 				199972EF24489AB200F3BC0E /* Buttons.swift in Sources */,
 				19CCB6AD2445332800DFAD05 /* SceneDelegate.swift in Sources */,
 				199972F92448D54600F3BC0E /* Home.swift in Sources */,
-				19CCB6DF2446477A00DFAD05 /* RM.swift in Sources */,
 				199972FF2449253A00F3BC0E /* UpdateKycList.swift in Sources */,
 				1999730324492BA000F3BC0E /* KYC.swift in Sources */,
 				199972F12448A98600F3BC0E /* ClientCardView.swift in Sources */,
 				19CCB6EA24469DE200DFAD05 /* Client.swift in Sources */,
+				1999730F244A4ED900F3BC0E /* AddNewKycTask.swift in Sources */,
 				199972FB2448E2EB00F3BC0E /* HomeView.swift in Sources */,
 				199972F72448C32100F3BC0E /* MenuView.swift in Sources */,
-				199972ED2447FD3600F3BC0E /* SecuritiesRows.swift in Sources */,
-				199972E42447CDC700F3BC0E /* ClientRows.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -832,25 +816,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		199972E52447D79700F3BC0E /* XCRemoteSwiftPackageReference "ASCollectionView" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/apptekstudios/ASCollectionView";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.5.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		199972E62447D79700F3BC0E /* ASCollectionView */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 199972E52447D79700F3BC0E /* XCRemoteSwiftPackageReference "ASCollectionView" */;
-			productName = ASCollectionView;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 19CCB69F2445332800DFAD05 /* Project object */;
 }
