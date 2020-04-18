@@ -27,6 +27,9 @@ struct UpdateKycList: View {
                 }.onDelete { index in
                     self.KYCData.KYCData.remove(at: index.first!)
                 }
+                .onMove{ (source: IndexSet , destination: Int) in
+                    self.KYCData.KYCData.move(fromOffsets: source, toOffset: destination)
+                }
                 }
             .navigationBarTitle(Text("KYC Tasks"))
                 .navigationBarItems(leading: Button(action: {self.addKyc()}) {

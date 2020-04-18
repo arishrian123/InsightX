@@ -9,7 +9,9 @@
 import SwiftUI
 
 struct HomeView: View {
+    
     @Binding var showProfile: Bool
+    @Binding var showClient: Bool
     @State var showKYC = false
     @ObservedObject var clientData = firebaseData
     
@@ -50,6 +52,10 @@ struct HomeView: View {
                                 .rotation3DEffect(Angle(degrees:
                                     Double(geometry.frame(in: .global).minX - 30) / -20
                                 ), axis: (x: 0, y: 10, z: 0))
+//                        }.onTapGesture {
+//                            self.showClient.toggle()
+//                        }.sheet(isPresented: self.$showClient){
+//                            ClientView()
                         }
                         .frame(width: 275, height: 350)
                     }
@@ -58,6 +64,8 @@ struct HomeView: View {
                 .padding(.bottom, 30)
             }
             
+            
+            
             Spacer()
         }
     }
@@ -65,7 +73,7 @@ struct HomeView: View {
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView(showProfile: .constant(false))
+        HomeView(showProfile: .constant(false), showClient: .constant(false))
     }
 }
 
@@ -80,9 +88,6 @@ struct SectionView: View {
                 ]
     
     var body: some View {
-        
-        
-        
         VStack {
             HStack(alignment: .top) {
                 VStack {
@@ -91,7 +96,7 @@ struct SectionView: View {
                         .frame(width: 160, alignment: .leading)
                         .foregroundColor(.white)
                     
-                    Text(client.Surname.uppercased())
+                    Text(client.Surname)
                     .font(.system(size: 20, weight: .bold))
                     .frame(width: 160, alignment: .leading)
                         .foregroundColor(.gray)
@@ -133,7 +138,7 @@ struct SectionView: View {
         .padding(.top, 5)
         .padding(.horizontal, 20)
         .frame(width: 275, height: 350)
-        .background(color.randomElement())
+        .background(Color(#colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1)))
         .cornerRadius(30)
         .shadow(color: Color(#colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1)).opacity(0.3), radius: 20, x: 0, y: 20)
     }

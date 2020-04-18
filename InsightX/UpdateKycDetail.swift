@@ -30,7 +30,10 @@ struct UpdateKycDetail: View {
         
         VStack{
         
-            KYCDetail(kyc: kyc, KYCCheck: KYCCheck)
+            KYCDetail(kyc: kyc, KYCCheck: $KYCCheck, PEPCheck: $PEPCheck, PaperMailing: $PaperMailing,
+                      FirstName: $FirstName, LastName: $LastName, ClientID: $ClientID, DOB: $DOB,
+                      ResidentialAddress: $ResidentialAddress, ClientKnowledge: $ClientKnowledge,
+                      TransitAccountHolder: $TransitAccountHolder, TransitAccountNumber: $TransitAccountNumber, SourceOfWealth: $SourceOfWealth, Submit: $Submit)
             
         }.navigationBarTitle(kyc.FirstName)
         
@@ -48,19 +51,19 @@ struct UpdateKycDetail_Previews: PreviewProvider {
 struct KYCDetail: View {
     
     var kyc: KYC
-    @State var KYCCheck: Bool = false
-    @State var PEPCheck = 1
-    @State var PaperMailing = 1
-    @State var FirstName: String = ""
-    @State var LastName: String = ""
-    @State var ClientID: String = ""
-    @State var DOB: String = ""
-    @State var ResidentialAddress: String = ""
-    @State var ClientKnowledge = 1
-    @State var TransitAccountHolder: String = ""
-    @State var TransitAccountNumber: String = ""
-    @State var SourceOfWealth = 1
-    @State var Submit: Bool = false
+    @Binding var KYCCheck: Bool
+    @Binding var PEPCheck: Int
+    @Binding var PaperMailing: Int
+    @Binding var FirstName: String
+    @Binding var LastName: String
+    @Binding var ClientID: String
+    @Binding var DOB: String
+    @Binding var ResidentialAddress: String
+    @Binding var ClientKnowledge: Int
+    @Binding var TransitAccountHolder: String
+    @Binding var TransitAccountNumber: String
+    @Binding var SourceOfWealth: Int
+    @Binding var Submit: Bool
     
     var body: some View {
         

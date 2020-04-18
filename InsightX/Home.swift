@@ -11,6 +11,7 @@ import SwiftUI
 struct Home: View {
     
     @State var showProfile = false
+    @State var showClient = false
     @State var viewState = CGSize.zero
     
     var body: some View {
@@ -18,7 +19,7 @@ struct Home: View {
         ZStack {
             Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)).edgesIgnoringSafeArea(.all)
             VStack{
-            HomeView(showProfile: $showProfile)
+            HomeView(showProfile: $showProfile, showClient: $showClient)
                 .padding(.top,44)
             .background(Color.white)
             .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
@@ -30,6 +31,7 @@ struct Home: View {
                 .edgesIgnoringSafeArea(.all)
             
             }
+            
             MenuView()
             .background(Color.black.opacity(0.001))
                 .offset(y: self.showProfile ? 0 : screen.height)
@@ -48,6 +50,8 @@ struct Home: View {
                     self.viewState = .zero
                 }
             )
+            
+            
                 
         }
         

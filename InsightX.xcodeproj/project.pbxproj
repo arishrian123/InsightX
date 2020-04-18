@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,13 @@
 		1999730324492BA000F3BC0E /* KYC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1999730224492BA000F3BC0E /* KYC.swift */; };
 		19997305244A0A0200F3BC0E /* UpdateKycDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19997304244A0A0100F3BC0E /* UpdateKycDetail.swift */; };
 		1999730F244A4ED900F3BC0E /* AddNewKycTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1999730E244A4ED900F3BC0E /* AddNewKycTask.swift */; };
+		19997311244A585400F3BC0E /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19997310244A585400F3BC0E /* TabBar.swift */; };
+		19997313244A5BC600F3BC0E /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19997312244A5BC600F3BC0E /* News.swift */; };
+		19997315244A5BDF00F3BC0E /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19997314244A5BDF00F3BC0E /* Settings.swift */; };
+		19997319244A60DD00F3BC0E /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19997318244A60DD00F3BC0E /* RingView.swift */; };
+		1999731C244A622600F3BC0E /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 1999731B244A622600F3BC0E /* SwiftUICharts */; };
+		19997322244A6AEA00F3BC0E /* SecuritiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19997321244A6AEA00F3BC0E /* SecuritiesView.swift */; };
+		19997326244AA63400F3BC0E /* SecurityCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19997325244AA63400F3BC0E /* SecurityCardView.swift */; };
 		19CCB6AB2445332800DFAD05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CCB6AA2445332800DFAD05 /* AppDelegate.swift */; };
 		19CCB6AD2445332800DFAD05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CCB6AC2445332800DFAD05 /* SceneDelegate.swift */; };
 		19CCB6B12445332900DFAD05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19CCB6B02445332900DFAD05 /* Assets.xcassets */; };
@@ -62,6 +69,12 @@
 		1999730224492BA000F3BC0E /* KYC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYC.swift; sourceTree = "<group>"; };
 		19997304244A0A0100F3BC0E /* UpdateKycDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateKycDetail.swift; sourceTree = "<group>"; };
 		1999730E244A4ED900F3BC0E /* AddNewKycTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewKycTask.swift; sourceTree = "<group>"; };
+		19997310244A585400F3BC0E /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		19997312244A5BC600F3BC0E /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		19997314244A5BDF00F3BC0E /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		19997318244A60DD00F3BC0E /* RingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingView.swift; sourceTree = "<group>"; };
+		19997321244A6AEA00F3BC0E /* SecuritiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecuritiesView.swift; sourceTree = "<group>"; };
+		19997325244AA63400F3BC0E /* SecurityCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityCardView.swift; sourceTree = "<group>"; };
 		19CCB6A72445332800DFAD05 /* InsightX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InsightX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19CCB6AA2445332800DFAD05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19CCB6AC2445332800DFAD05 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +108,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4CAFE52FF1485930CCD94C7 /* Pods_InsightX.framework in Frameworks */,
+				1999731C244A622600F3BC0E /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,10 +160,12 @@
 				19CCB6E324466D0E00DFAD05 /* GoogleService-Info.plist */,
 				19CCB6AA2445332800DFAD05 /* AppDelegate.swift */,
 				19CCB6AC2445332800DFAD05 /* SceneDelegate.swift */,
+				199972F02448A98600F3BC0E /* ClientCardView.swift */,
 				199972F62448C32100F3BC0E /* MenuView.swift */,
 				199972F82448D54600F3BC0E /* Home.swift */,
 				199972FA2448E2EB00F3BC0E /* HomeView.swift */,
-				199972F02448A98600F3BC0E /* ClientCardView.swift */,
+				19997325244AA63400F3BC0E /* SecurityCardView.swift */,
+				19997321244A6AEA00F3BC0E /* SecuritiesView.swift */,
 				199972FE2449253A00F3BC0E /* UpdateKycList.swift */,
 				19997304244A0A0100F3BC0E /* UpdateKycDetail.swift */,
 				19CCB6B02445332900DFAD05 /* Assets.xcassets */,
@@ -159,6 +175,10 @@
 				19CCB6E02446486300DFAD05 /* Model */,
 				199972EE24489AB200F3BC0E /* Buttons.swift */,
 				1999730E244A4ED900F3BC0E /* AddNewKycTask.swift */,
+				19997310244A585400F3BC0E /* TabBar.swift */,
+				19997312244A5BC600F3BC0E /* News.swift */,
+				19997314244A5BDF00F3BC0E /* Settings.swift */,
+				19997318244A60DD00F3BC0E /* RingView.swift */,
 			);
 			path = InsightX;
 			sourceTree = "<group>";
@@ -250,6 +270,7 @@
 			);
 			name = InsightX;
 			packageProductDependencies = (
+				1999731B244A622600F3BC0E /* SwiftUICharts */,
 			);
 			productName = InsightX;
 			productReference = 19CCB6A72445332800DFAD05 /* InsightX.app */;
@@ -327,6 +348,7 @@
 			);
 			mainGroup = 19CCB69E2445332800DFAD05;
 			packageReferences = (
+				1999731A244A622600F3BC0E /* XCRemoteSwiftPackageReference "ChartView" */,
 			);
 			productRefGroup = 19CCB6A82445332800DFAD05 /* Products */;
 			projectDirPath = "";
@@ -478,17 +500,23 @@
 				199972E92447DEA200F3BC0E /* Portfolio.swift in Sources */,
 				19997305244A0A0200F3BC0E /* UpdateKycDetail.swift in Sources */,
 				19CCB6AB2445332800DFAD05 /* AppDelegate.swift in Sources */,
+				19997311244A585400F3BC0E /* TabBar.swift in Sources */,
+				19997322244A6AEA00F3BC0E /* SecuritiesView.swift in Sources */,
 				199972EB2447DEC600F3BC0E /* Securities.swift in Sources */,
+				19997319244A60DD00F3BC0E /* RingView.swift in Sources */,
 				19CCB6FA2447AEA800DFAD05 /* FirebaseData.swift in Sources */,
+				19997315244A5BDF00F3BC0E /* Settings.swift in Sources */,
 				199972EF24489AB200F3BC0E /* Buttons.swift in Sources */,
 				19CCB6AD2445332800DFAD05 /* SceneDelegate.swift in Sources */,
 				199972F92448D54600F3BC0E /* Home.swift in Sources */,
+				19997326244AA63400F3BC0E /* SecurityCardView.swift in Sources */,
 				199972FF2449253A00F3BC0E /* UpdateKycList.swift in Sources */,
 				1999730324492BA000F3BC0E /* KYC.swift in Sources */,
 				199972F12448A98600F3BC0E /* ClientCardView.swift in Sources */,
 				19CCB6EA24469DE200DFAD05 /* Client.swift in Sources */,
 				1999730F244A4ED900F3BC0E /* AddNewKycTask.swift in Sources */,
 				199972FB2448E2EB00F3BC0E /* HomeView.swift in Sources */,
+				19997313244A5BC600F3BC0E /* News.swift in Sources */,
 				199972F72448C32100F3BC0E /* MenuView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -816,6 +844,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1999731A244A622600F3BC0E /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1999731B244A622600F3BC0E /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1999731A244A622600F3BC0E /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 19CCB69F2445332800DFAD05 /* Project object */;
 }
