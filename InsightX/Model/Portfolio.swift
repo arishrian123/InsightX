@@ -4,7 +4,7 @@ struct Portfolio: Codable, Identifiable, Hashable {
     
 let id = UUID()
     
-var CustomerID = 0,
+var CustomerID = "",
 Currency = "",
 FeeCode = "",
 InitialValue = "",

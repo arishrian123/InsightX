@@ -10,7 +10,6 @@
 		199972E92447DEA200F3BC0E /* Portfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199972E82447DEA200F3BC0E /* Portfolio.swift */; };
 		199972EB2447DEC600F3BC0E /* Securities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199972EA2447DEC600F3BC0E /* Securities.swift */; };
 		199972EF24489AB200F3BC0E /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199972EE24489AB200F3BC0E /* Buttons.swift */; };
-		199972F12448A98600F3BC0E /* ClientCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199972F02448A98600F3BC0E /* ClientCardView.swift */; };
 		199972F72448C32100F3BC0E /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199972F62448C32100F3BC0E /* MenuView.swift */; };
 		199972F92448D54600F3BC0E /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199972F82448D54600F3BC0E /* Home.swift */; };
 		199972FB2448E2EB00F3BC0E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199972FA2448E2EB00F3BC0E /* HomeView.swift */; };
@@ -25,6 +24,12 @@
 		1999731C244A622600F3BC0E /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 1999731B244A622600F3BC0E /* SwiftUICharts */; };
 		19997322244A6AEA00F3BC0E /* SecuritiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19997321244A6AEA00F3BC0E /* SecuritiesView.swift */; };
 		19997326244AA63400F3BC0E /* SecurityCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19997325244AA63400F3BC0E /* SecurityCardView.swift */; };
+		19997328244B71A500F3BC0E /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19997327244B71A500F3BC0E /* Modifiers.swift */; };
+		1999732A244B87DA00F3BC0E /* ClientInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19997329244B87DA00F3BC0E /* ClientInfoView.swift */; };
+		1999732C244BD1A400F3BC0E /* PortfolioInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1999732B244BD1A400F3BC0E /* PortfolioInfoView.swift */; };
+		1999732F244C06FD00F3BC0E /* SunburstDiagram in Frameworks */ = {isa = PBXBuildFile; productRef = 1999732E244C06FD00F3BC0E /* SunburstDiagram */; };
+		19997331244C072900F3BC0E /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19997330244C072900F3BC0E /* test.swift */; };
+		19997336244C091A00F3BC0E /* Sliders in Frameworks */ = {isa = PBXBuildFile; productRef = 19997335244C091A00F3BC0E /* Sliders */; };
 		19CCB6AB2445332800DFAD05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CCB6AA2445332800DFAD05 /* AppDelegate.swift */; };
 		19CCB6AD2445332800DFAD05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CCB6AC2445332800DFAD05 /* SceneDelegate.swift */; };
 		19CCB6B12445332900DFAD05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19CCB6B02445332900DFAD05 /* Assets.xcassets */; };
@@ -61,7 +66,6 @@
 		199972E82447DEA200F3BC0E /* Portfolio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Portfolio.swift; sourceTree = "<group>"; };
 		199972EA2447DEC600F3BC0E /* Securities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Securities.swift; sourceTree = "<group>"; };
 		199972EE24489AB200F3BC0E /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
-		199972F02448A98600F3BC0E /* ClientCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientCardView.swift; sourceTree = "<group>"; };
 		199972F62448C32100F3BC0E /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		199972F82448D54600F3BC0E /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		199972FA2448E2EB00F3BC0E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -75,6 +79,10 @@
 		19997318244A60DD00F3BC0E /* RingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingView.swift; sourceTree = "<group>"; };
 		19997321244A6AEA00F3BC0E /* SecuritiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecuritiesView.swift; sourceTree = "<group>"; };
 		19997325244AA63400F3BC0E /* SecurityCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityCardView.swift; sourceTree = "<group>"; };
+		19997327244B71A500F3BC0E /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
+		19997329244B87DA00F3BC0E /* ClientInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientInfoView.swift; sourceTree = "<group>"; };
+		1999732B244BD1A400F3BC0E /* PortfolioInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioInfoView.swift; sourceTree = "<group>"; };
+		19997330244C072900F3BC0E /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		19CCB6A72445332800DFAD05 /* InsightX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InsightX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19CCB6AA2445332800DFAD05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19CCB6AC2445332800DFAD05 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +115,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1999732F244C06FD00F3BC0E /* SunburstDiagram in Frameworks */,
+				19997336244C091A00F3BC0E /* Sliders in Frameworks */,
 				C4CAFE52FF1485930CCD94C7 /* Pods_InsightX.framework in Frameworks */,
 				1999731C244A622600F3BC0E /* SwiftUICharts in Frameworks */,
 			);
@@ -160,12 +170,15 @@
 				19CCB6E324466D0E00DFAD05 /* GoogleService-Info.plist */,
 				19CCB6AA2445332800DFAD05 /* AppDelegate.swift */,
 				19CCB6AC2445332800DFAD05 /* SceneDelegate.swift */,
-				199972F02448A98600F3BC0E /* ClientCardView.swift */,
+				19997329244B87DA00F3BC0E /* ClientInfoView.swift */,
 				199972F62448C32100F3BC0E /* MenuView.swift */,
 				199972F82448D54600F3BC0E /* Home.swift */,
+				1999732B244BD1A400F3BC0E /* PortfolioInfoView.swift */,
 				199972FA2448E2EB00F3BC0E /* HomeView.swift */,
 				19997325244AA63400F3BC0E /* SecurityCardView.swift */,
 				19997321244A6AEA00F3BC0E /* SecuritiesView.swift */,
+				19997318244A60DD00F3BC0E /* RingView.swift */,
+				19997327244B71A500F3BC0E /* Modifiers.swift */,
 				199972FE2449253A00F3BC0E /* UpdateKycList.swift */,
 				19997304244A0A0100F3BC0E /* UpdateKycDetail.swift */,
 				19CCB6B02445332900DFAD05 /* Assets.xcassets */,
@@ -178,7 +191,7 @@
 				19997310244A585400F3BC0E /* TabBar.swift */,
 				19997312244A5BC600F3BC0E /* News.swift */,
 				19997314244A5BDF00F3BC0E /* Settings.swift */,
-				19997318244A60DD00F3BC0E /* RingView.swift */,
+				19997330244C072900F3BC0E /* test.swift */,
 			);
 			path = InsightX;
 			sourceTree = "<group>";
@@ -271,6 +284,8 @@
 			name = InsightX;
 			packageProductDependencies = (
 				1999731B244A622600F3BC0E /* SwiftUICharts */,
+				1999732E244C06FD00F3BC0E /* SunburstDiagram */,
+				19997335244C091A00F3BC0E /* Sliders */,
 			);
 			productName = InsightX;
 			productReference = 19CCB6A72445332800DFAD05 /* InsightX.app */;
@@ -349,6 +364,8 @@
 			mainGroup = 19CCB69E2445332800DFAD05;
 			packageReferences = (
 				1999731A244A622600F3BC0E /* XCRemoteSwiftPackageReference "ChartView" */,
+				1999732D244C06FC00F3BC0E /* XCRemoteSwiftPackageReference "SwiftSunburstDiagram" */,
+				19997334244C091A00F3BC0E /* XCRemoteSwiftPackageReference "swiftui-sliders" */,
 			);
 			productRefGroup = 19CCB6A82445332800DFAD05 /* Products */;
 			projectDirPath = "";
@@ -509,15 +526,18 @@
 				199972EF24489AB200F3BC0E /* Buttons.swift in Sources */,
 				19CCB6AD2445332800DFAD05 /* SceneDelegate.swift in Sources */,
 				199972F92448D54600F3BC0E /* Home.swift in Sources */,
+				19997328244B71A500F3BC0E /* Modifiers.swift in Sources */,
+				19997331244C072900F3BC0E /* test.swift in Sources */,
 				19997326244AA63400F3BC0E /* SecurityCardView.swift in Sources */,
 				199972FF2449253A00F3BC0E /* UpdateKycList.swift in Sources */,
+				1999732A244B87DA00F3BC0E /* ClientInfoView.swift in Sources */,
 				1999730324492BA000F3BC0E /* KYC.swift in Sources */,
-				199972F12448A98600F3BC0E /* ClientCardView.swift in Sources */,
 				19CCB6EA24469DE200DFAD05 /* Client.swift in Sources */,
 				1999730F244A4ED900F3BC0E /* AddNewKycTask.swift in Sources */,
 				199972FB2448E2EB00F3BC0E /* HomeView.swift in Sources */,
 				19997313244A5BC600F3BC0E /* News.swift in Sources */,
 				199972F72448C32100F3BC0E /* MenuView.swift in Sources */,
+				1999732C244BD1A400F3BC0E /* PortfolioInfoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -854,6 +874,22 @@
 				minimumVersion = 1.5.0;
 			};
 		};
+		1999732D244C06FC00F3BC0E /* XCRemoteSwiftPackageReference "SwiftSunburstDiagram" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lludo/SwiftSunburstDiagram.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+		19997334244C091A00F3BC0E /* XCRemoteSwiftPackageReference "swiftui-sliders" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/spacenation/swiftui-sliders.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -861,6 +897,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1999731A244A622600F3BC0E /* XCRemoteSwiftPackageReference "ChartView" */;
 			productName = SwiftUICharts;
+		};
+		1999732E244C06FD00F3BC0E /* SunburstDiagram */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1999732D244C06FC00F3BC0E /* XCRemoteSwiftPackageReference "SwiftSunburstDiagram" */;
+			productName = SunburstDiagram;
+		};
+		19997335244C091A00F3BC0E /* Sliders */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 19997334244C091A00F3BC0E /* XCRemoteSwiftPackageReference "swiftui-sliders" */;
+			productName = Sliders;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

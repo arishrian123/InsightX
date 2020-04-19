@@ -9,8 +9,30 @@
 import SwiftUI
 
 struct Settings: View {
+    
+    @State var recieveNotifications: Bool = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        
+        
+        VStack{
+        HStack {
+            Text("Settings")
+                .font(.system(size: 28, weight: .bold))
+            
+            Spacer()
+            
+        }
+        .padding(.horizontal)
+        .padding(.leading, 14)
+        .padding(.top, 30)
+            
+            Form{
+                Toggle(isOn: $recieveNotifications){
+                    Text("Recieve Notificatons")
+                }
+            }
     }
 }
 
@@ -18,4 +40,5 @@ struct Settings_Previews: PreviewProvider {
     static var previews: some View {
         Settings()
     }
+}
 }

@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct TabBar: View {
+    @State var show: Bool = true
     var body: some View {
         TabView {
             
@@ -22,7 +23,7 @@ struct TabBar: View {
                 Text("Intelli News")
             }
             
-            SecuritiesView().tabItem{
+            SecuritiesView(show: $show).tabItem{
                 Image(systemName: "umbrella.fill")
                 Text("Securities")
             }
@@ -34,9 +35,10 @@ struct TabBar: View {
             
             
         }
+        }
         
     }
-}
+
 
 struct TabBar_Previews: PreviewProvider {
     static var previews: some View {

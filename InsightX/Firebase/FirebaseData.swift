@@ -56,7 +56,7 @@ class FirebaseData: ObservableObject {
                         // Real time create from server
                         if (diff.type == .added) {
                             
-                            let portfolioData = Portfolio(CustomerID: diff.document.get("CUSTOMERID") as! Int, Currency: diff.document.get("Curency") as! String, FeeCode: diff.document.get("FeeCode") as! String, InitialValue: diff.document.get("InitialValue") as! String, STATUS: diff.document.get("STATUS") as! String, AccType: diff.document.get("Type") as! String)
+                            let portfolioData = Portfolio(CustomerID: diff.document.documentID , Currency: diff.document.get("Curency") as! String, FeeCode: diff.document.get("FeeCode") as! String, InitialValue: diff.document.get("InitialValue") as! String, STATUS: diff.document.get("STATUS") as! String, AccType: diff.document.get("Type") as! String)
                             
                             self.portfolioData.append(portfolioData)
                         }
