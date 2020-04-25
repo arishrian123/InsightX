@@ -18,7 +18,7 @@ struct TabBar: View {
                 Text("Home")
             }
             
-            News().tabItem{
+            NewsCard().tabItem{
                 Image(systemName: "book.fill")
                 Text("Intelli News")
             }

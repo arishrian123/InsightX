@@ -12,7 +12,7 @@ import Sliders
 
 struct ClientInfoView: View {
     var client: Client
-    @State var value = 0.5
+    @Binding var value: CGFloat
     @ObservedObject var portfolioData = firebaseData
     @Binding var showClient: Bool
     var body: some View {
@@ -58,11 +58,21 @@ struct ClientInfoView: View {
                     HStack {
                         HStack {
                             
+                            ZStack{
                             Image(client.Surname)
                             .resizable()
                             .frame(width: 50, height: 50)
                             .aspectRatio(contentMode: .fit)
                             .clipShape(Circle())
+                                
+                                if value >= 0 && value < 0.25{
+                                    RiskRingView(color1: #colorLiteral(red: 0.2745098174, green: 0.4862745106, blue: 0.1411764771, alpha: 1), color2: #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1), width: 55, height: 55)
+                                } else if value > 0.25 && value < 0.75 {
+                                    RiskRingView(color1: #colorLiteral(red: 0.7254902124, green: 0.4784313738, blue: 0.09803921729, alpha: 1), color2: #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1), width: 55, height: 55)
+                                } else if value > 0.75 && value <= 1.0{
+                                    RiskRingView(color1: #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1), color2: #colorLiteral(red: 0.521568656, green: 0.1098039225, blue: 0.05098039284, alpha: 1), width: 55, height: 55)
+                                }
+                            }
                             
                             VStack(alignment: .leading){
                                 
@@ -95,6 +105,7 @@ struct ClientInfoView: View {
                                     thumbSize: CGSize(width: 30, height: 50)
                                 )
                             )
+                            
                         }.frame(width: 100)
                         Spacer()
                         }
@@ -123,7 +134,7 @@ struct ClientInfoView: View {
 
 struct ClientInfoView_Previews: PreviewProvider {
     static var previews: some View {
-        ClientInfoView(client: .init(), showClient: .constant(false))
+        ClientInfoView(client: .init(), value: .constant(0.5), showClient: .constant(false))
     }
 }
 
@@ -145,7 +156,7 @@ struct PView: View {
             else if String(portfolio.CustomerID) == String("\(client.CustomerID)-2")
             {
                 VStack{
-                BarChartView(data: ChartData(points: [8,23,54,32,12,37,7,23,43]), title: "Portfolio 2", legend: portfolio.InitialValue)
+                BarChartView(data: ChartData(points: [8,23,5,32,12,3,7,23,43]), title: "Portfolio 2", legend: portfolio.InitialValue)
                 }
                 
             }else{

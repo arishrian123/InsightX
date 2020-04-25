@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		199972E92447DEA200F3BC0E /* Portfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199972E82447DEA200F3BC0E /* Portfolio.swift */; };
 		199972EB2447DEC600F3BC0E /* Securities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199972EA2447DEC600F3BC0E /* Securities.swift */; };
-		199972EF24489AB200F3BC0E /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199972EE24489AB200F3BC0E /* Buttons.swift */; };
 		199972F72448C32100F3BC0E /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199972F62448C32100F3BC0E /* MenuView.swift */; };
 		199972F92448D54600F3BC0E /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199972F82448D54600F3BC0E /* Home.swift */; };
 		199972FB2448E2EB00F3BC0E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199972FA2448E2EB00F3BC0E /* HomeView.swift */; };
@@ -18,7 +17,7 @@
 		19997305244A0A0200F3BC0E /* UpdateKycDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19997304244A0A0100F3BC0E /* UpdateKycDetail.swift */; };
 		1999730F244A4ED900F3BC0E /* AddNewKycTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1999730E244A4ED900F3BC0E /* AddNewKycTask.swift */; };
 		19997311244A585400F3BC0E /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19997310244A585400F3BC0E /* TabBar.swift */; };
-		19997313244A5BC600F3BC0E /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19997312244A5BC600F3BC0E /* News.swift */; };
+		19997313244A5BC600F3BC0E /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19997312244A5BC600F3BC0E /* NewsView.swift */; };
 		19997315244A5BDF00F3BC0E /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19997314244A5BDF00F3BC0E /* Settings.swift */; };
 		19997319244A60DD00F3BC0E /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19997318244A60DD00F3BC0E /* RingView.swift */; };
 		1999731C244A622600F3BC0E /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 1999731B244A622600F3BC0E /* SwiftUICharts */; };
@@ -28,8 +27,13 @@
 		1999732A244B87DA00F3BC0E /* ClientInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19997329244B87DA00F3BC0E /* ClientInfoView.swift */; };
 		1999732C244BD1A400F3BC0E /* PortfolioInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1999732B244BD1A400F3BC0E /* PortfolioInfoView.swift */; };
 		1999732F244C06FD00F3BC0E /* SunburstDiagram in Frameworks */ = {isa = PBXBuildFile; productRef = 1999732E244C06FD00F3BC0E /* SunburstDiagram */; };
-		19997331244C072900F3BC0E /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19997330244C072900F3BC0E /* test.swift */; };
 		19997336244C091A00F3BC0E /* Sliders in Frameworks */ = {isa = PBXBuildFile; productRef = 19997335244C091A00F3BC0E /* Sliders */; };
+		19997338244CBA1B00F3BC0E /* RiskRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19997337244CBA1B00F3BC0E /* RiskRingView.swift */; };
+		1999733A244CE4DA00F3BC0E /* Stocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19997339244CE4DA00F3BC0E /* Stocks.swift */; };
+		1999733D244DF55700F3BC0E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 1999733C244DF55700F3BC0E /* Alamofire */; };
+		19997340244E16C600F3BC0E /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 1999733F244E16C600F3BC0E /* SwiftyJSON */; };
+		19997344244F86B300F3BC0E /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19997343244F86B300F3BC0E /* News.swift */; };
+		19997346245395BC00F3BC0E /* NewsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19997345245395BC00F3BC0E /* NewsCard.swift */; };
 		19CCB6AB2445332800DFAD05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CCB6AA2445332800DFAD05 /* AppDelegate.swift */; };
 		19CCB6AD2445332800DFAD05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CCB6AC2445332800DFAD05 /* SceneDelegate.swift */; };
 		19CCB6B12445332900DFAD05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19CCB6B02445332900DFAD05 /* Assets.xcassets */; };
@@ -65,7 +69,6 @@
 /* Begin PBXFileReference section */
 		199972E82447DEA200F3BC0E /* Portfolio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Portfolio.swift; sourceTree = "<group>"; };
 		199972EA2447DEC600F3BC0E /* Securities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Securities.swift; sourceTree = "<group>"; };
-		199972EE24489AB200F3BC0E /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		199972F62448C32100F3BC0E /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		199972F82448D54600F3BC0E /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		199972FA2448E2EB00F3BC0E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -74,7 +77,7 @@
 		19997304244A0A0100F3BC0E /* UpdateKycDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateKycDetail.swift; sourceTree = "<group>"; };
 		1999730E244A4ED900F3BC0E /* AddNewKycTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewKycTask.swift; sourceTree = "<group>"; };
 		19997310244A585400F3BC0E /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
-		19997312244A5BC600F3BC0E /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		19997312244A5BC600F3BC0E /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
 		19997314244A5BDF00F3BC0E /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		19997318244A60DD00F3BC0E /* RingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingView.swift; sourceTree = "<group>"; };
 		19997321244A6AEA00F3BC0E /* SecuritiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecuritiesView.swift; sourceTree = "<group>"; };
@@ -82,7 +85,10 @@
 		19997327244B71A500F3BC0E /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
 		19997329244B87DA00F3BC0E /* ClientInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientInfoView.swift; sourceTree = "<group>"; };
 		1999732B244BD1A400F3BC0E /* PortfolioInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioInfoView.swift; sourceTree = "<group>"; };
-		19997330244C072900F3BC0E /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
+		19997337244CBA1B00F3BC0E /* RiskRingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiskRingView.swift; sourceTree = "<group>"; };
+		19997339244CE4DA00F3BC0E /* Stocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stocks.swift; sourceTree = "<group>"; };
+		19997343244F86B300F3BC0E /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		19997345245395BC00F3BC0E /* NewsCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsCard.swift; sourceTree = "<group>"; };
 		19CCB6A72445332800DFAD05 /* InsightX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InsightX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19CCB6AA2445332800DFAD05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19CCB6AC2445332800DFAD05 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +121,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19997340244E16C600F3BC0E /* SwiftyJSON in Frameworks */,
+				1999733D244DF55700F3BC0E /* Alamofire in Frameworks */,
 				1999732F244C06FD00F3BC0E /* SunburstDiagram in Frameworks */,
 				19997336244C091A00F3BC0E /* Sliders in Frameworks */,
 				C4CAFE52FF1485930CCD94C7 /* Pods_InsightX.framework in Frameworks */,
@@ -175,6 +183,7 @@
 				199972F82448D54600F3BC0E /* Home.swift */,
 				1999732B244BD1A400F3BC0E /* PortfolioInfoView.swift */,
 				199972FA2448E2EB00F3BC0E /* HomeView.swift */,
+				19997337244CBA1B00F3BC0E /* RiskRingView.swift */,
 				19997325244AA63400F3BC0E /* SecurityCardView.swift */,
 				19997321244A6AEA00F3BC0E /* SecuritiesView.swift */,
 				19997318244A60DD00F3BC0E /* RingView.swift */,
@@ -186,12 +195,11 @@
 				19CCB6B82445332900DFAD05 /* Info.plist */,
 				19CCB6B22445332900DFAD05 /* Preview Content */,
 				19CCB6E02446486300DFAD05 /* Model */,
-				199972EE24489AB200F3BC0E /* Buttons.swift */,
 				1999730E244A4ED900F3BC0E /* AddNewKycTask.swift */,
 				19997310244A585400F3BC0E /* TabBar.swift */,
-				19997312244A5BC600F3BC0E /* News.swift */,
+				19997312244A5BC600F3BC0E /* NewsView.swift */,
+				19997345245395BC00F3BC0E /* NewsCard.swift */,
 				19997314244A5BDF00F3BC0E /* Settings.swift */,
-				19997330244C072900F3BC0E /* test.swift */,
 			);
 			path = InsightX;
 			sourceTree = "<group>";
@@ -229,6 +237,8 @@
 				199972E82447DEA200F3BC0E /* Portfolio.swift */,
 				199972EA2447DEC600F3BC0E /* Securities.swift */,
 				1999730224492BA000F3BC0E /* KYC.swift */,
+				19997339244CE4DA00F3BC0E /* Stocks.swift */,
+				19997343244F86B300F3BC0E /* News.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -286,6 +296,8 @@
 				1999731B244A622600F3BC0E /* SwiftUICharts */,
 				1999732E244C06FD00F3BC0E /* SunburstDiagram */,
 				19997335244C091A00F3BC0E /* Sliders */,
+				1999733C244DF55700F3BC0E /* Alamofire */,
+				1999733F244E16C600F3BC0E /* SwiftyJSON */,
 			);
 			productName = InsightX;
 			productReference = 19CCB6A72445332800DFAD05 /* InsightX.app */;
@@ -366,6 +378,8 @@
 				1999731A244A622600F3BC0E /* XCRemoteSwiftPackageReference "ChartView" */,
 				1999732D244C06FC00F3BC0E /* XCRemoteSwiftPackageReference "SwiftSunburstDiagram" */,
 				19997334244C091A00F3BC0E /* XCRemoteSwiftPackageReference "swiftui-sliders" */,
+				1999733B244DF55700F3BC0E /* XCRemoteSwiftPackageReference "Alamofire" */,
+				1999733E244E16C600F3BC0E /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 			);
 			productRefGroup = 19CCB6A82445332800DFAD05 /* Products */;
 			projectDirPath = "";
@@ -515,6 +529,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				199972E92447DEA200F3BC0E /* Portfolio.swift in Sources */,
+				19997346245395BC00F3BC0E /* NewsCard.swift in Sources */,
 				19997305244A0A0200F3BC0E /* UpdateKycDetail.swift in Sources */,
 				19CCB6AB2445332800DFAD05 /* AppDelegate.swift in Sources */,
 				19997311244A585400F3BC0E /* TabBar.swift in Sources */,
@@ -523,19 +538,20 @@
 				19997319244A60DD00F3BC0E /* RingView.swift in Sources */,
 				19CCB6FA2447AEA800DFAD05 /* FirebaseData.swift in Sources */,
 				19997315244A5BDF00F3BC0E /* Settings.swift in Sources */,
-				199972EF24489AB200F3BC0E /* Buttons.swift in Sources */,
+				19997338244CBA1B00F3BC0E /* RiskRingView.swift in Sources */,
 				19CCB6AD2445332800DFAD05 /* SceneDelegate.swift in Sources */,
 				199972F92448D54600F3BC0E /* Home.swift in Sources */,
 				19997328244B71A500F3BC0E /* Modifiers.swift in Sources */,
-				19997331244C072900F3BC0E /* test.swift in Sources */,
 				19997326244AA63400F3BC0E /* SecurityCardView.swift in Sources */,
 				199972FF2449253A00F3BC0E /* UpdateKycList.swift in Sources */,
 				1999732A244B87DA00F3BC0E /* ClientInfoView.swift in Sources */,
 				1999730324492BA000F3BC0E /* KYC.swift in Sources */,
+				1999733A244CE4DA00F3BC0E /* Stocks.swift in Sources */,
 				19CCB6EA24469DE200DFAD05 /* Client.swift in Sources */,
+				19997344244F86B300F3BC0E /* News.swift in Sources */,
 				1999730F244A4ED900F3BC0E /* AddNewKycTask.swift in Sources */,
 				199972FB2448E2EB00F3BC0E /* HomeView.swift in Sources */,
-				19997313244A5BC600F3BC0E /* News.swift in Sources */,
+				19997313244A5BC600F3BC0E /* NewsView.swift in Sources */,
 				199972F72448C32100F3BC0E /* MenuView.swift in Sources */,
 				1999732C244BD1A400F3BC0E /* PortfolioInfoView.swift in Sources */,
 			);
@@ -890,6 +906,22 @@
 				minimumVersion = 0.2.1;
 			};
 		};
+		1999733B244DF55700F3BC0E /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+		1999733E244E16C600F3BC0E /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -907,6 +939,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 19997334244C091A00F3BC0E /* XCRemoteSwiftPackageReference "swiftui-sliders" */;
 			productName = Sliders;
+		};
+		1999733C244DF55700F3BC0E /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1999733B244DF55700F3BC0E /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		1999733F244E16C600F3BC0E /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1999733E244E16C600F3BC0E /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

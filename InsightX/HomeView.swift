@@ -14,6 +14,7 @@ struct HomeView: View {
     @Binding var showClient: Bool
     @Binding var showPortfolio: Bool
     @State var showKYC = false
+    @State var value: CGFloat = 0.5
     @ObservedObject var clientData = firebaseData
     
     var body: some View {
@@ -57,6 +58,7 @@ struct HomeView: View {
                         ForEach(clientData.clientData) { item in
                             GeometryReader { geometry in
                                 SectionView(client: item, width: 275, height: 350, showClient: self.showClient)
+                                    
                                     .rotation3DEffect(Angle(degrees:
                                         Double(geometry.frame(in: .global).minX - 30) / -20
                                     ), axis: (x: 0, y: 10, z: 0))
@@ -105,7 +107,9 @@ struct SectionView: View {
     var width: CGFloat = 275
     var height: CGFloat = 350
     @State var showClient: Bool
-    let color = [Color("card1"),
+    @State var value: CGFloat = 0.5
+    let color = [
+                 Color("card1"),
                  Color("card2"),
                  Color("card3"),
                  Color("card4"),
@@ -135,11 +139,22 @@ struct SectionView: View {
                 
                 Spacer()
                 
-                Image(client.Surname)
-                .resizable()
-                .frame(width: 50, height: 50)
-                .aspectRatio(contentMode: .fit)
-                .clipShape(Circle())
+                ZStack {
+                    Image(client.Surname)
+                    .resizable()
+                    .frame(width: 50, height: 50)
+                    .aspectRatio(contentMode: .fit)
+                        .clipShape(Circle())
+                    
+                    if value >= 0 && value < 0.25{
+                        RiskRingView(color1: #colorLiteral(red: 0.2745098174, green: 0.4862745106, blue: 0.1411764771, alpha: 1), color2: #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1), width: 55, height: 55)
+                    } else if value > 0.25 && value < 0.75 {
+                        RiskRingView(color1: #colorLiteral(red: 0.7254902124, green: 0.4784313738, blue: 0.09803921729, alpha: 1), color2: #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1), width: 55, height: 55)
+                    } else if value > 0.75 && value <= 1.0{
+                        RiskRingView(color1: #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1), color2: #colorLiteral(red: 0.521568656, green: 0.1098039225, blue: 0.05098039284, alpha: 1), width: 55, height: 55)
+                    }
+                }
+                
                 
             }.padding()
             
@@ -159,14 +174,15 @@ struct SectionView: View {
         .padding(.top, 5)
         .padding(.horizontal, 20)
         .frame(width: width, height: height)
-        .background(Color(#colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1)))
+        .background(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
         .cornerRadius(30)
     .modifier(ShadowModifier())
         .onTapGesture {
             self.showClient.toggle()
            
-        }.sheet(isPresented: $showClient){
-            ClientInfoView(client: self.client, showClient: self.$showClient)
+        }
+        .sheet(isPresented: $showClient){
+            ClientInfoView(client: self.client, value: self.$value, showClient: self.$showClient)
         }
         
     }

@@ -11,6 +11,7 @@ import SwiftUI
 struct Settings: View {
     
     @State var recieveNotifications: Bool = false
+
     
     var body: some View {
         
@@ -32,6 +33,7 @@ struct Settings: View {
                 Toggle(isOn: $recieveNotifications){
                     Text("Recieve Notificatons")
                 }
+                
             }
     }
 }
@@ -42,3 +44,4 @@ struct Settings_Previews: PreviewProvider {
     }
 }
 }
+
