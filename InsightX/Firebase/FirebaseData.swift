@@ -19,12 +19,18 @@ class FirebaseData: ObservableObject {
     @Published var portfolioData = [Portfolio]()
     @Published var securitiesData = [Securities]()
     @Published var KYCData = [KYC]()
+    @Published var firstTradingMonthData = [FirstTradingMonth]()
+    @Published var secondTradingMonthData = [SecondTradingMonth]()
+    @Published var thirdTradingMonthData = [ThirdTradingMonth]()
     
     init() {
         readClientData()
         readPortfolioData()
         readSecuritiesData()
         readKYCData()
+        readFirstTradingMonthData()
+        readSecondTradingMonthData()
+        readThirdTradingMonthData()
     }
     
     
@@ -179,6 +185,108 @@ class FirebaseData: ObservableObject {
             }
         }
     }
+    
+    func readFirstTradingMonthData() {
+            firstTMDBCollection.addSnapshotListener { (documentSnapshot, err) in
+                if err != nil {
+                    print((err?.localizedDescription)!)
+                    return
+                }else {
+                    print("read data success")
+                }
+                
+                documentSnapshot!.documentChanges.forEach { diff in
+                    // Real time create from server
+                    if (diff.type == .added) {
+                        
+                        let firstTradingMonthData = FirstTradingMonth(portfolioID: diff.document.documentID, dateOfTransaction: diff.document.get("DateOfTransaction") as! String, securityID: diff.document.get("Security ID1") as! String, quantity: diff.document.get("Security1Amount") as! Int, type: diff.document.get("TypeOfTransaction") as! String)
+                        
+                        self.firstTradingMonthData.append(firstTradingMonthData)
+                    }
+                    
+                    // Real time modify from server
+    //                if (diff.type == .modified) {
+    //                    self.data = self.data.map { (eachData) -> ThreadDataType in
+    //                        var data = eachData
+    //                        if data.id == diff.document.documentID {
+    //                            data.msg = diff.document.get("testText") as! String
+    //                            return data
+    //                        }else {
+    //                            return eachData
+    //                        }
+    //                    }
+    //                }
+                }
+            }
+        }
+    
+    func readSecondTradingMonthData() {
+            secondTMDBCollection.addSnapshotListener { (documentSnapshot, err) in
+                if err != nil {
+                    print((err?.localizedDescription)!)
+                    return
+                }else {
+                    print("read data success")
+                }
+                
+                documentSnapshot!.documentChanges.forEach { diff in
+                    // Real time create from server
+                    if (diff.type == .added) {
+                        
+                        let secondTradingMonthData = SecondTradingMonth(portfolioID: diff.document.documentID, dateOfTransaction: diff.document.get("Date2OfTransactions") as! String, firstSecurityID: diff.document.get("SecurityID21") as! String, firstSecurityQuantity: diff.document.get("Security21Amount") as! Int, secondSecurityID: diff.document.get("SecurityID22") as! String, secondSecurityQuantity: diff.document.get("SecurityAmount222") as! Int, firstTransactionType: diff.document.get("TransactionType") as! String, secondTransactionType: diff.document.get("Transaction22Type") as! String)
+                        
+                        self.secondTradingMonthData.append(secondTradingMonthData)
+                    }
+                    
+                    // Real time modify from server
+    //                if (diff.type == .modified) {
+    //                    self.data = self.data.map { (eachData) -> ThreadDataType in
+    //                        var data = eachData
+    //                        if data.id == diff.document.documentID {
+    //                            data.msg = diff.document.get("testText") as! String
+    //                            return data
+    //                        }else {
+    //                            return eachData
+    //                        }
+    //                    }
+    //                }
+                }
+            }
+        }
+    
+    func readThirdTradingMonthData() {
+            thirdTMDBCollection.addSnapshotListener { (documentSnapshot, err) in
+                if err != nil {
+                    print((err?.localizedDescription)!)
+                    return
+                }else {
+                    print("read data success")
+                }
+                
+                documentSnapshot!.documentChanges.forEach { diff in
+                    // Real time create from server
+                    if (diff.type == .added) {
+                        
+                        let thirdTradingMonthData = ThirdTradingMonth(portfolioID: diff.document.documentID, dateOfTransaction: diff.document.get("Date3OfTransactions") as! String, firstSecurityID: diff.document.get("SecurityID31") as! String, firstSecurityQuantity: diff.document.get("Security31Amount") as! Int, secondSecurityID: diff.document.get("SecurityID32") as! String, secondSecurityQuantity: diff.document.get("SecurityAmount3222") as! Int, firstTransactionType: diff.document.get("Transaction31Type") as! String, secondTransactionType: diff.document.get("Transaction32Type") as! String)
+                        
+                        self.thirdTradingMonthData.append(thirdTradingMonthData)
+                    }
+                    
+                    // Real time modify from server
+    //                if (diff.type == .modified) {
+    //                    self.data = self.data.map { (eachData) -> ThreadDataType in
+    //                        var data = eachData
+    //                        if data.id == diff.document.documentID {
+    //                            data.msg = diff.document.get("testText") as! String
+    //                            return data
+    //                        }else {
+    //                            return eachData
+    //                        }
+    //                    }
+    //                }
+                }
+            }
+        }
     
     //Reference link: https://firebase.google.com/docs/firestore/manage-data/delete-data
 //    func deleteData(datas: FirebaseData ,index: IndexSet) {

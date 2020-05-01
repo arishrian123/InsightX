@@ -18,17 +18,17 @@ struct Home: View {
     var body: some View {
         
         ZStack {
-            Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)).edgesIgnoringSafeArea(.all)
+            Color("background2").edgesIgnoringSafeArea(.all)
             VStack{
                 HomeView(showProfile: $showProfile, showClient: $showClient, showPortfolio: $showPortfolio)
                 .padding(.top,44)
             .background(
                 VStack {
-                    LinearGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 0.8392156863, green: 0.8431372549, blue: 0.8901960784, alpha: 1)), Color.white]), startPoint: .top, endPoint: .bottom)
+                    LinearGradient(gradient: Gradient(colors: [Color("background2"), Color("background1")]), startPoint: .top, endPoint: .bottom)
                         .frame(height: 200)
                     Spacer()
                 }
-                .background(Color.white)
+                .background(Color("background1"))
             )
             .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
             .shadow(color: Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)).opacity(0.2), radius: 20, x: 0, y: 20)

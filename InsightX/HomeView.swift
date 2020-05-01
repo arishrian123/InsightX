@@ -31,10 +31,11 @@ struct HomeView: View {
                     
                     Button(action: {self.showKYC.toggle()}) {
                         Image(systemName: "text.badge.plus")
-                            .renderingMode(.original)
+//                            .renderingMode(.original)
+                            .foregroundColor(.primary)
                         .font(.system(size: 16, weight: .medium))
                         .frame(width: 36, height: 36)
-                        .background(LinearGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 0.8392156863, green: 0.8431372549, blue: 0.8901960784, alpha: 1)), Color.white]), startPoint: .top, endPoint: .bottom))
+                        .background(LinearGradient(gradient: Gradient(colors: [Color("background3"), Color("background3")]), startPoint: .top, endPoint: .bottom))
                         .clipShape(Circle())
                         .shadow(color: Color("primary").opacity(0.1), radius: 1, x: 0, y: 1)
                         .shadow(color: Color("primary").opacity(0.2), radius: 10, x: 0, y: 10)
@@ -248,7 +249,7 @@ struct SectionPortfolioView: View {
         .padding(.top, 5)
         .padding(.horizontal, 20)
         .frame(width: width, height: height)
-        .background(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)))
+        .background(color[4])
         .cornerRadius(30)
     .modifier(ShadowModifier())
         .onTapGesture {
@@ -270,7 +271,7 @@ struct HomeStacks: View {
                 }
                 
             }.padding(15)
-                .background(Color.white)
+                .background(Color("background3"))
                 .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
                 .modifier(ShadowModifier())
             
@@ -283,7 +284,7 @@ struct HomeStacks: View {
                 }
                 
             }.padding(15)
-                .background(Color.white)
+                .background(Color("background3"))
                 .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
                 .modifier(ShadowModifier())
             
@@ -296,7 +297,7 @@ struct HomeStacks: View {
                 }
                 
             }.padding(15)
-                .background(Color.white)
+                .background(Color("background3"))
                 .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
                 .modifier(ShadowModifier())
             

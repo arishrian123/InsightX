@@ -15,6 +15,7 @@ struct ClientInfoView: View {
     @Binding var value: CGFloat
     @ObservedObject var portfolioData = firebaseData
     @Binding var showClient: Bool
+    @State var showEditPortfolio: Bool = false
     var body: some View {
         
         ZStack{
@@ -24,11 +25,56 @@ struct ClientInfoView: View {
             .offset(y: screen.height - 1400)
                 
         
-            HStack(){
-            ForEach(portfolioData.portfolioData) { item in
-                PView(portfolio: item, client: self.client)
+            VStack {
+                HStack(){
+                ForEach(portfolioData.portfolioData) { item in
+                    PView(portfolio: item, client: self.client)
+                }
+                    
+                    
+                }.offset(y: 230)
+                
+                ZStack {
+                    Text("Portfolio Performance over time")
+                    .font(.system(size: 22, weight: .bold))
+                        .offset(y: -70).zIndex(1)
+                    VStack {
+                        
+                        
+                        HStack(alignment: .bottom) {
+                            
+                            LineView(data: [8,23,54,32,12,37,7,23,43])
+                        }.offset(y: -20)
+                    }
+                    
+                    HStack(spacing: 20) {
+                        
+                        Button(action: {self.showEditPortfolio.toggle()}){
+
+                            Text("Edit Portfolio")
+                            .font(.system(size: 22, weight: .bold))
+                            .frame(width: 250, height: 50)
+                            .foregroundColor(Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
+                            .background(Color(#colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1)))
+                            .clipShape(RoundedRectangle(cornerRadius: 50))
+                                .padding(.all, 5)
+                             .overlay(
+                                 RoundedRectangle(cornerRadius: 50)
+                                     .stroke(Color.blue, lineWidth: 6)
+                             )
+                            }
+                        .sheet(isPresented: $showEditPortfolio){
+                            EditPortfolio(client: self.client)
+                        }
+                        
+                    }.offset(y: 210)
+                    
+                }.offset(y: 50)
+                
+                
+                
+                
             }
-            }.offset(y: -70)
                 
             
             
@@ -84,6 +130,9 @@ struct ClientInfoView: View {
                                 .font(.system(size: 22, weight: .bold))
                                 .foregroundColor(Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
                                 
+                                Text(client.Domicile)
+                                .font(.system(size: 14, weight: .bold))
+                                .foregroundColor(Color(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)))
                                 
                             }
                         }
@@ -144,24 +193,27 @@ struct PView: View {
     
     var body: some View {
         
-        HStack(spacing: 20){
-            if (String(portfolio.CustomerID) == String("\(client.CustomerID)-1"))
-                
-            {
-                VStack{
-                BarChartView(data: ChartData(points: [8,23,54,32,12,37,7,23,43]), title: "Portfolio 1", legend: portfolio.InitialValue)
-                }
-            }
-            
-            else if String(portfolio.CustomerID) == String("\(client.CustomerID)-2")
-            {
-                VStack{
-                BarChartView(data: ChartData(points: [8,23,5,32,12,3,7,23,43]), title: "Portfolio 2", legend: portfolio.InitialValue)
+        VStack {
+            HStack(spacing: 20){
+                if (String(portfolio.CustomerID) == String("\(client.CustomerID)-1"))
+                    
+                {
+                    VStack{
+                    BarChartView(data: ChartData(points: [8,23,54,32,12,37,7,23,43]), title: "Portfolio 1", legend: portfolio.InitialValue)
+                    }
                 }
                 
-            }else{
-                
+                else if String(portfolio.CustomerID) == String("\(client.CustomerID)-2")
+                {
+                    VStack{
+                    BarChartView(data: ChartData(points: [8,23,5,32,12,3,7,23,43]), title: "Portfolio 2", legend: portfolio.InitialValue)
+                    }
+                    
+                }else{
+                    
+                }
             }
+
         }
         
         

@@ -41,7 +41,7 @@ class newsApi: ObservableObject {
             
             let json = try! JSON(data: data.data!)
 //            let newJson = json["articles"].dictionary
-            print(json["articles"][0])
+            
             for x in 0...19{
                 
                 if let newsData = json["articles"][x].dictionary{
