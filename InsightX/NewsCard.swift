@@ -11,6 +11,7 @@ import SDWebImageSwiftUI
 
 struct NewsCard: View {
     @ObservedObject var newsData = NewsData
+    @ObservedObject var client = firebaseData
     @State var show = false
     @State var active = false
     @State var activeIndex = -1
@@ -24,12 +25,24 @@ struct NewsCard: View {
             
             ScrollView {
                 VStack(spacing: 30) {
-                    Text("News")
+                    Text("Intelli News")
                         .font(.largeTitle).bold()
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(.leading, 30)
                         .padding(.top, 30)
                         .blur(radius: active ? 20 : 0)
+                    
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack{
+                            ForEach(client.clientData){ item in
+                                Image(item.Surname)
+                                    .resizable()
+                                    .frame(width: 60, height: 60)
+                                    .clipShape(Circle())
+                            }
+                        }.frame(height: 65)
+                    }.padding(.leading, 30)
+
                     
                     ForEach(newsData.NewsData.indices, id: \.self) { index in
                         GeometryReader { geometry in

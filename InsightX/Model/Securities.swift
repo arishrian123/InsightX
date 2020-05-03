@@ -16,6 +16,7 @@ Price4 = 0,
 Price4Date = "",
 Price5 = 0,
 Price5Date = "",
-ShortDescription = ""
+ShortDescription = "",
+securityID = ""
     
 }

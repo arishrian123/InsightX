@@ -17,7 +17,6 @@
 		19997305244A0A0200F3BC0E /* UpdateKycDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19997304244A0A0100F3BC0E /* UpdateKycDetail.swift */; };
 		1999730F244A4ED900F3BC0E /* AddNewKycTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1999730E244A4ED900F3BC0E /* AddNewKycTask.swift */; };
 		19997311244A585400F3BC0E /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19997310244A585400F3BC0E /* TabBar.swift */; };
-		19997313244A5BC600F3BC0E /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19997312244A5BC600F3BC0E /* NewsView.swift */; };
 		19997315244A5BDF00F3BC0E /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19997314244A5BDF00F3BC0E /* Settings.swift */; };
 		19997319244A60DD00F3BC0E /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19997318244A60DD00F3BC0E /* RingView.swift */; };
 		1999731C244A622600F3BC0E /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 1999731B244A622600F3BC0E /* SwiftUICharts */; };
@@ -26,7 +25,6 @@
 		19997328244B71A500F3BC0E /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19997327244B71A500F3BC0E /* Modifiers.swift */; };
 		1999732A244B87DA00F3BC0E /* ClientInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19997329244B87DA00F3BC0E /* ClientInfoView.swift */; };
 		1999732C244BD1A400F3BC0E /* PortfolioInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1999732B244BD1A400F3BC0E /* PortfolioInfoView.swift */; };
-		1999732F244C06FD00F3BC0E /* SunburstDiagram in Frameworks */ = {isa = PBXBuildFile; productRef = 1999732E244C06FD00F3BC0E /* SunburstDiagram */; };
 		19997336244C091A00F3BC0E /* Sliders in Frameworks */ = {isa = PBXBuildFile; productRef = 19997335244C091A00F3BC0E /* Sliders */; };
 		19997338244CBA1B00F3BC0E /* RiskRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19997337244CBA1B00F3BC0E /* RiskRingView.swift */; };
 		1999733A244CE4DA00F3BC0E /* Stocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19997339244CE4DA00F3BC0E /* Stocks.swift */; };
@@ -39,6 +37,15 @@
 		19BA2EAD245CC16C00636ECC /* FirstTradingMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BA2EAC245CC16C00636ECC /* FirstTradingMonth.swift */; };
 		19BA2EB1245CC40900636ECC /* SecondTradingMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BA2EB0245CC40900636ECC /* SecondTradingMonth.swift */; };
 		19BA2EB3245CC55300636ECC /* ThirdTradingMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BA2EB2245CC55300636ECC /* ThirdTradingMonth.swift */; };
+		19BA2EB7245E1B5C00636ECC /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 19BA2EB5245E1B5C00636ECC /* loading.json */; };
+		19BA2EB8245E1B5C00636ECC /* success.json in Resources */ = {isa = PBXBuildFile; fileRef = 19BA2EB6245E1B5C00636ECC /* success.json */; };
+		19BA2EBA245E1BE400636ECC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BA2EB9245E1BE400636ECC /* LoginView.swift */; };
+		19BA2EBC245E28E800636ECC /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BA2EBB245E28E800636ECC /* BlurView.swift */; };
+		19BA2EBE245E397200636ECC /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BA2EBD245E397200636ECC /* LottieView.swift */; };
+		19BA2EC1245E39F100636ECC /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 19BA2EC0245E39F100636ECC /* Lottie */; };
+		19BA2EC3245E3B1B00636ECC /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BA2EC2245E3B1B00636ECC /* LoadingView.swift */; };
+		19BA2EC5245E3F5600636ECC /* SuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BA2EC4245E3F5600636ECC /* SuccessView.swift */; };
+		19BA2EC7245E4EA300636ECC /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BA2EC6245E4EA300636ECC /* UserStore.swift */; };
 		19CCB6AB2445332800DFAD05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CCB6AA2445332800DFAD05 /* AppDelegate.swift */; };
 		19CCB6AD2445332800DFAD05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CCB6AC2445332800DFAD05 /* SceneDelegate.swift */; };
 		19CCB6B12445332900DFAD05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19CCB6B02445332900DFAD05 /* Assets.xcassets */; };
@@ -82,7 +89,6 @@
 		19997304244A0A0100F3BC0E /* UpdateKycDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateKycDetail.swift; sourceTree = "<group>"; };
 		1999730E244A4ED900F3BC0E /* AddNewKycTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewKycTask.swift; sourceTree = "<group>"; };
 		19997310244A585400F3BC0E /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
-		19997312244A5BC600F3BC0E /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
 		19997314244A5BDF00F3BC0E /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		19997318244A60DD00F3BC0E /* RingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingView.swift; sourceTree = "<group>"; };
 		19997321244A6AEA00F3BC0E /* SecuritiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecuritiesView.swift; sourceTree = "<group>"; };
@@ -98,6 +104,14 @@
 		19BA2EAC245CC16C00636ECC /* FirstTradingMonth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTradingMonth.swift; sourceTree = "<group>"; };
 		19BA2EB0245CC40900636ECC /* SecondTradingMonth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTradingMonth.swift; sourceTree = "<group>"; };
 		19BA2EB2245CC55300636ECC /* ThirdTradingMonth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdTradingMonth.swift; sourceTree = "<group>"; };
+		19BA2EB5245E1B5C00636ECC /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
+		19BA2EB6245E1B5C00636ECC /* success.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = success.json; sourceTree = "<group>"; };
+		19BA2EB9245E1BE400636ECC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		19BA2EBB245E28E800636ECC /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		19BA2EBD245E397200636ECC /* LottieView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		19BA2EC2245E3B1B00636ECC /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		19BA2EC4245E3F5600636ECC /* SuccessView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuccessView.swift; sourceTree = "<group>"; };
+		19BA2EC6245E4EA300636ECC /* UserStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
 		19CCB6A72445332800DFAD05 /* InsightX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InsightX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19CCB6AA2445332800DFAD05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19CCB6AC2445332800DFAD05 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -133,10 +147,10 @@
 				1999738D2458B6D900F3BC0E /* SDWebImageSwiftUI in Frameworks */,
 				19997340244E16C600F3BC0E /* SwiftyJSON in Frameworks */,
 				1999733D244DF55700F3BC0E /* Alamofire in Frameworks */,
-				1999732F244C06FD00F3BC0E /* SunburstDiagram in Frameworks */,
 				19997336244C091A00F3BC0E /* Sliders in Frameworks */,
 				C4CAFE52FF1485930CCD94C7 /* Pods_InsightX.framework in Frameworks */,
 				1999731C244A622600F3BC0E /* SwiftUICharts in Frameworks */,
+				19BA2EC1245E39F100636ECC /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +173,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19BA2EB4245E1B5C00636ECC /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				19BA2EB5245E1B5C00636ECC /* loading.json */,
+				19BA2EB6245E1B5C00636ECC /* success.json */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
 		19CCB69E2445332800DFAD05 = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +207,12 @@
 		19CCB6A92445332800DFAD05 /* InsightX */ = {
 			isa = PBXGroup;
 			children = (
+				19BA2EC6245E4EA300636ECC /* UserStore.swift */,
+				19BA2EC4245E3F5600636ECC /* SuccessView.swift */,
+				19BA2EC2245E3B1B00636ECC /* LoadingView.swift */,
+				19BA2EBB245E28E800636ECC /* BlurView.swift */,
+				19BA2EBD245E397200636ECC /* LottieView.swift */,
+				19BA2EB4245E1B5C00636ECC /* Lottie */,
 				19CCB6F82447AE2100DFAD05 /* Firebase */,
 				19CCB6E324466D0E00DFAD05 /* GoogleService-Info.plist */,
 				19CCB6AA2445332800DFAD05 /* AppDelegate.swift */,
@@ -207,10 +236,10 @@
 				19CCB6E02446486300DFAD05 /* Model */,
 				1999730E244A4ED900F3BC0E /* AddNewKycTask.swift */,
 				19997310244A585400F3BC0E /* TabBar.swift */,
-				19997312244A5BC600F3BC0E /* NewsView.swift */,
 				19997345245395BC00F3BC0E /* NewsCard.swift */,
 				19997314244A5BDF00F3BC0E /* Settings.swift */,
 				1999738E245906B000F3BC0E /* EditPortfolio.swift */,
+				19BA2EB9245E1BE400636ECC /* LoginView.swift */,
 			);
 			path = InsightX;
 			sourceTree = "<group>";
@@ -308,11 +337,11 @@
 			name = InsightX;
 			packageProductDependencies = (
 				1999731B244A622600F3BC0E /* SwiftUICharts */,
-				1999732E244C06FD00F3BC0E /* SunburstDiagram */,
 				19997335244C091A00F3BC0E /* Sliders */,
 				1999733C244DF55700F3BC0E /* Alamofire */,
 				1999733F244E16C600F3BC0E /* SwiftyJSON */,
 				1999738C2458B6D900F3BC0E /* SDWebImageSwiftUI */,
+				19BA2EC0245E39F100636ECC /* Lottie */,
 			);
 			productName = InsightX;
 			productReference = 19CCB6A72445332800DFAD05 /* InsightX.app */;
@@ -391,11 +420,11 @@
 			mainGroup = 19CCB69E2445332800DFAD05;
 			packageReferences = (
 				1999731A244A622600F3BC0E /* XCRemoteSwiftPackageReference "ChartView" */,
-				1999732D244C06FC00F3BC0E /* XCRemoteSwiftPackageReference "SwiftSunburstDiagram" */,
 				19997334244C091A00F3BC0E /* XCRemoteSwiftPackageReference "swiftui-sliders" */,
 				1999733B244DF55700F3BC0E /* XCRemoteSwiftPackageReference "Alamofire" */,
 				1999733E244E16C600F3BC0E /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 				1999738B2458B6D900F3BC0E /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				19BA2EBF245E39F100636ECC /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = 19CCB6A82445332800DFAD05 /* Products */;
 			projectDirPath = "";
@@ -417,6 +446,8 @@
 				19CCB6B42445332900DFAD05 /* Preview Assets.xcassets in Resources */,
 				19CCB6B12445332900DFAD05 /* Assets.xcassets in Resources */,
 				19CCB6E424466D0E00DFAD05 /* GoogleService-Info.plist in Resources */,
+				19BA2EB7245E1B5C00636ECC /* loading.json in Resources */,
+				19BA2EB8245E1B5C00636ECC /* success.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,6 +581,7 @@
 				19CCB6AB2445332800DFAD05 /* AppDelegate.swift in Sources */,
 				19997311244A585400F3BC0E /* TabBar.swift in Sources */,
 				19997322244A6AEA00F3BC0E /* SecuritiesView.swift in Sources */,
+				19BA2EC7245E4EA300636ECC /* UserStore.swift in Sources */,
 				199972EB2447DEC600F3BC0E /* Securities.swift in Sources */,
 				19997319244A60DD00F3BC0E /* RingView.swift in Sources */,
 				19CCB6FA2447AEA800DFAD05 /* FirebaseData.swift in Sources */,
@@ -564,13 +596,17 @@
 				1999730324492BA000F3BC0E /* KYC.swift in Sources */,
 				1999733A244CE4DA00F3BC0E /* Stocks.swift in Sources */,
 				19CCB6EA24469DE200DFAD05 /* Client.swift in Sources */,
+				19BA2EBE245E397200636ECC /* LottieView.swift in Sources */,
+				19BA2EC3245E3B1B00636ECC /* LoadingView.swift in Sources */,
 				19BA2EB3245CC55300636ECC /* ThirdTradingMonth.swift in Sources */,
 				19997344244F86B300F3BC0E /* News.swift in Sources */,
+				19BA2EBA245E1BE400636ECC /* LoginView.swift in Sources */,
 				19BA2EAD245CC16C00636ECC /* FirstTradingMonth.swift in Sources */,
 				1999730F244A4ED900F3BC0E /* AddNewKycTask.swift in Sources */,
+				19BA2EC5245E3F5600636ECC /* SuccessView.swift in Sources */,
+				19BA2EBC245E28E800636ECC /* BlurView.swift in Sources */,
 				19BA2EB1245CC40900636ECC /* SecondTradingMonth.swift in Sources */,
 				199972FB2448E2EB00F3BC0E /* HomeView.swift in Sources */,
-				19997313244A5BC600F3BC0E /* NewsView.swift in Sources */,
 				1999738F245906B000F3BC0E /* EditPortfolio.swift in Sources */,
 				199972F72448C32100F3BC0E /* MenuView.swift in Sources */,
 				1999732C244BD1A400F3BC0E /* PortfolioInfoView.swift in Sources */,
@@ -910,14 +946,6 @@
 				minimumVersion = 1.5.0;
 			};
 		};
-		1999732D244C06FC00F3BC0E /* XCRemoteSwiftPackageReference "SwiftSunburstDiagram" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/lludo/SwiftSunburstDiagram.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.1.0;
-			};
-		};
 		19997334244C091A00F3BC0E /* XCRemoteSwiftPackageReference "swiftui-sliders" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/spacenation/swiftui-sliders.git";
@@ -950,6 +978,14 @@
 				minimumVersion = 1.3.3;
 			};
 		};
+		19BA2EBF245E39F100636ECC /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.8;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -957,11 +993,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1999731A244A622600F3BC0E /* XCRemoteSwiftPackageReference "ChartView" */;
 			productName = SwiftUICharts;
-		};
-		1999732E244C06FD00F3BC0E /* SunburstDiagram */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1999732D244C06FC00F3BC0E /* XCRemoteSwiftPackageReference "SwiftSunburstDiagram" */;
-			productName = SunburstDiagram;
 		};
 		19997335244C091A00F3BC0E /* Sliders */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -982,6 +1013,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1999738B2458B6D900F3BC0E /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
 			productName = SDWebImageSwiftUI;
+		};
+		19BA2EC0245E39F100636ECC /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 19BA2EBF245E39F100636ECC /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

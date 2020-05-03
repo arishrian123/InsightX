@@ -16,9 +16,26 @@ struct ShadowModifier: ViewModifier {
     }
 }
 
-struct FontModifier: ViewModifier {
+struct TitleFontModifier: ViewModifier {
     func body(content: Content) -> some View {
         content
-        
+        .font(.system(size: 22, weight: .bold))
+        .foregroundColor(Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
+    }
+}
+
+struct SubTitleFontModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+        .font(.system(size: 18, weight: .bold))
+        .foregroundColor(Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
+    }
+}
+
+struct BodyFontModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+        .font(.system(size: 14, weight: .bold))
+        .foregroundColor(Color(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)))
     }
 }

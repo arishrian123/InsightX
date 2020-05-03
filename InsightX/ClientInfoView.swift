@@ -51,7 +51,7 @@ struct ClientInfoView: View {
                         
                         Button(action: {self.showEditPortfolio.toggle()}){
 
-                            Text("Edit Portfolio")
+                            Text("Portfolio Stats")
                             .font(.system(size: 22, weight: .bold))
                             .frame(width: 250, height: 50)
                             .foregroundColor(Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
