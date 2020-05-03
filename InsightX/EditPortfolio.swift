@@ -22,6 +22,16 @@ struct EditPortfolio: View {
         ScrollView(showsIndicators: false) {
 //            Color("background2").edgesIgnoringSafeArea(.all)
             
+            HStack {
+                VStack {
+                    Text("Trading History")
+                        .font(.system(size: 28, weight: .bold))
+                }
+                Spacer()
+            }.padding(.horizontal)
+            .padding(.leading, 14)
+            .padding(.top, 30)
+            
             VStack(spacing: 20) {
                 
                 VStack {
@@ -71,7 +81,7 @@ struct EditPortfolio: View {
                                 
                                 ForEach(secondTradingMonth.secondTradingMonthData) { item in
                                     secondTradingMonthView(client: self.client, secondTradingMonth: item)
-                                    
+                                    secondTradingMonthView(client: self.client, secondTradingMonth: item)
                                 }
                                 
                                 
@@ -107,9 +117,9 @@ struct EditPortfolio: View {
                                 
                             }
                         }.padding(.leading, 20)
-                            .padding(.top, 20)
+                            .padding(.top, 10)
                         
-                    }.padding(.top, 50)
+                    }.padding(.top, -5)
                 }.frame(width: screen.width-60, height: 280)
                     .modifier(ShadowModifier())
                 

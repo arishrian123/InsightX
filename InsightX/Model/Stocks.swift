@@ -13,7 +13,8 @@ struct Stocks: Codable, Identifiable, Hashable {
     
     let id = UUID()
     
-    var Energy: String = "",
+    var key: String,
+    Energy: String = "",
      Financials: String = "",
      Industrials: String = "",
      Materials: String = "",
@@ -57,7 +58,7 @@ class Api: ObservableObject{
             if let stockData = json[keys[x]].dictionary {
                 
                 
-                let stocks = Stocks(Energy: stockData["Energy"]!.description, Financials: stockData["Financials"]!.description, Materials: stockData["Materials"]!.description, Utilities: stockData["Utilities"]!.description, RealEstate: stockData["Real Estate"]?.description ?? "", HealthCare: stockData["Health Care"]!.description, ConsumerDiscretionary: stockData["Consumer Discretionary"]!.description, ConsumerStaples: stockData["Consumer Staples"]!.description, CommunicationServices: stockData["Communication Services"]!.description, InformationTechnology: stockData["Information Technology"]!.description)
+                let stocks = Stocks(key: keys[x], Energy: stockData["Energy"]!.description, Financials: stockData["Financials"]!.description, Materials: stockData["Materials"]!.description, Utilities: stockData["Utilities"]!.description, RealEstate: stockData["Real Estate"]?.description ?? "", HealthCare: stockData["Health Care"]!.description, ConsumerDiscretionary: stockData["Consumer Discretionary"]!.description, ConsumerStaples: stockData["Consumer Staples"]!.description, CommunicationServices: stockData["Communication Services"]!.description, InformationTechnology: stockData["Information Technology"]!.description)
                 
                 self.StocksData.append(stocks)
             }

@@ -130,6 +130,10 @@ struct ClientInfoView: View {
                                 .font(.system(size: 22, weight: .bold))
                                 .foregroundColor(Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
                                 
+                                Text(client.Birthday)
+                                .font(.system(size: 14, weight: .bold))
+                                .foregroundColor(Color(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)))
+                                
                                 Text(client.Domicile)
                                 .font(.system(size: 14, weight: .bold))
                                 .foregroundColor(Color(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)))

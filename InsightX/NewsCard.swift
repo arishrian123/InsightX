@@ -12,6 +12,7 @@ import SDWebImageSwiftUI
 struct NewsCard: View {
     @ObservedObject var newsData = NewsData
     @ObservedObject var client = firebaseData
+    @ObservedObject var stock = StocksData
     @State var show = false
     @State var active = false
     @State var activeIndex = -1
@@ -41,6 +42,21 @@ struct NewsCard: View {
                                     .clipShape(Circle())
                             }
                         }.frame(height: 65)
+                    }.padding(.leading, 30)
+                    
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack(spacing: 20){
+                            ForEach(stock.StocksData){ item in
+                                VStack(alignment: .leading, spacing: 10){
+                                    
+                                    StocksView(stock: item)
+                                    
+                                    
+                                }.frame(width: 300, height: 320)
+                                .background(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
+                                    .clipShape(RoundedRectangle(cornerRadius: 20))
+                            }
+                        }.frame(height: 320)
                     }.padding(.leading, 30)
 
                     
@@ -227,3 +243,133 @@ struct NewsCardView: View {
     }
 }
 
+
+struct StocksView: View {
+    var stock: Stocks
+    
+    var body: some View {
+        
+        VStack{
+        HStack{
+            Text(stock.key)
+                .foregroundColor(Color.white)
+            .bold()
+
+        }
+        HStack {
+            Text("Energy:").modifier(BodyFontModifier())
+            if(stock.Energy.contains("-")){
+                Text(stock.Energy)
+                    .foregroundColor(Color.red)
+                .modifier(BodyFontModifier())
+            }else{
+            Text(stock.Energy)
+                .foregroundColor(Color.green)
+            .modifier(BodyFontModifier())
+            }
+
+        }
+        HStack {
+            Text("Financials:").modifier(BodyFontModifier())
+
+            if(stock.Financials.contains("-")){
+            Text(stock.Financials)
+                .foregroundColor(Color.red)
+            .modifier(BodyFontModifier())
+            }else{
+            Text(stock.Financials)
+                .foregroundColor(Color.green)
+            .modifier(BodyFontModifier())
+            }
+        }
+        HStack {
+            Text("Materials:").modifier(BodyFontModifier())
+
+            if(stock.Materials.contains("-")){
+            Text(stock.Materials)
+                .foregroundColor(Color.red)
+            .modifier(BodyFontModifier())
+            }else{
+            Text(stock.Materials)
+                .foregroundColor(Color.green)
+            .modifier(BodyFontModifier())
+            }
+        }
+        HStack {
+            Text("Utilities:").modifier(BodyFontModifier())
+
+            if(stock.Utilities.contains("-")){
+            Text(stock.Utilities)
+                .foregroundColor(Color.red)
+            .modifier(BodyFontModifier())
+            }else{
+            Text(stock.Utilities)
+                .foregroundColor(Color.green)
+            .modifier(BodyFontModifier())
+            }
+        }
+        HStack {
+            Text("Real Estate:").modifier(BodyFontModifier())
+
+            if(stock.RealEstate.contains("-")){
+            Text(stock.RealEstate)
+                .foregroundColor(Color.red)
+            .modifier(BodyFontModifier())
+            }else{
+            Text(stock.RealEstate)
+                .foregroundColor(Color.green)
+            .modifier(BodyFontModifier())
+            }
+        }
+        HStack {
+            Text("Health Care:").modifier(BodyFontModifier())
+            if(stock.HealthCare.contains("-")){
+            Text(stock.HealthCare)
+                .foregroundColor(Color.red)
+            .modifier(BodyFontModifier())
+            }else{
+            Text(stock.HealthCare)
+                .foregroundColor(Color.green)
+            .modifier(BodyFontModifier())
+            }
+        }
+        HStack {
+            Text("Consumer Staples:").modifier(BodyFontModifier())
+
+            if(stock.ConsumerStaples.contains("-")){
+            Text(stock.ConsumerStaples)
+                .foregroundColor(Color.red)
+            .modifier(BodyFontModifier())
+            }else{
+            Text(stock.ConsumerStaples)
+                .foregroundColor(Color.green)
+            .modifier(BodyFontModifier())
+            }
+        }
+        HStack {
+            Text("Communication Services:").modifier(BodyFontModifier())
+            if(stock.CommunicationServices.contains("-")){
+            Text(stock.CommunicationServices)
+                .foregroundColor(Color.red)
+            .modifier(BodyFontModifier())
+            }else{
+            Text(stock.CommunicationServices)
+                .foregroundColor(Color.green)
+            .modifier(BodyFontModifier())
+            }
+        }
+        HStack {
+            Text("Information Technology:").modifier(BodyFontModifier())
+            if(stock.InformationTechnology.contains("-")){
+            Text(stock.InformationTechnology)
+                .foregroundColor(Color.red)
+            .modifier(BodyFontModifier())
+            }else{
+            Text(stock.InformationTechnology)
+                .foregroundColor(Color.green)
+            .modifier(BodyFontModifier())
+            }
+        }
+        }
+    }
+}
